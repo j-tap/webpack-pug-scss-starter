@@ -10,7 +10,6 @@
 - Bootstrap
 
 ### Install
-```bash
-$ npm install // install all packages
-$ npm start // runing wather, for avtoreload browser
-```
+
+- `npm install` - install all packages
+- `npm start` - runing wather, for avtoreload browser
