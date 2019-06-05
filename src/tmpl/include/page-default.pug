@@ -1,0 +1,15 @@
+include ../include/head.pug
+
+body
+	include ../include/header.pug
+	
+	.container-fluid.mt-5
+		.row
+			.col-xl-2.col-md-3
+				include ../include/aside.pug
+
+			.col-xl-10.col-md-9
+				main.main
+					block content
+
+	include ../include/footer.pug
