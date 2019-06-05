@@ -1,4 +1,4 @@
-import './scss/main.scss';
+import '../scss/main.scss';
 
 /* 		Bootstrap Optional	 */
 import 'bootstrap/js/dist/util';
