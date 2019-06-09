@@ -3,6 +3,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const fs = require('fs');
 
@@ -81,6 +82,12 @@ const conf = {
 			$: "jquery",
 			jQuery: "jquery"
 		}),
+		new CopyWebpackPlugin([
+            {
+				from: 'src/img', 
+				to: 'img'
+			} 
+        ]),
     ].concat(htmlPlugins)
 };
 
